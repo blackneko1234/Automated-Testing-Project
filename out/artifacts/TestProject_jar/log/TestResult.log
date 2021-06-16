@@ -1,0 +1,342 @@
+[DEBUG] Wednesday 16-Jun-2021, 02:58:23 PM: >>>>>>>>>>>>>>> TestCase_1. Login Test <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 02:58:30 PM: ========= Test login but not enter the username and password =========
+[INFO] Wednesday 16-Jun-2021, 02:58:30 PM: Pass: When click login without enter the username and password it will show the red message
+[DEBUG] Wednesday 16-Jun-2021, 02:58:32 PM: ========= Test login but not enter password =========
+[INFO] Wednesday 16-Jun-2021, 02:58:32 PM: Pass: When click login without enter the password it will show the red message
+[DEBUG] Wednesday 16-Jun-2021, 02:58:34 PM: ========= Test login but not enter username =========
+[INFO] Wednesday 16-Jun-2021, 02:58:35 PM: Pass: When click login without enter the username it will show the red message
+[DEBUG] Wednesday 16-Jun-2021, 02:58:37 PM: ========= Test login =========
+[INFO] Wednesday 16-Jun-2021, 02:58:42 PM: Pass: User can login to the website
+[DEBUG] Wednesday 16-Jun-2021, 02:58:45 PM: >>>>>>>>>>>>>>> End TestCase_1. Login Test <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 02:58:48 PM: >>>>>>>>>>>>>>> TestCase_2. Show username <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 02:58:53 PM: ========= Show username at the top right of website =========
+[INFO] Wednesday 16-Jun-2021, 02:58:56 PM: Pass: Username before login equal to username after login
+[DEBUG] Wednesday 16-Jun-2021, 02:58:58 PM: >>>>>>>>>>>>>>> End TestCase_2. Show username <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 02:59:01 PM: >>>>>>>>>>>>>>> TestCase_3. Add patient <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 02:59:17 PM: Pass: Add patient successfully
+[DEBUG] Wednesday 16-Jun-2021, 02:59:20 PM: >>>>>>>>>>>>>>> End TestCase_3. Add patient <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 02:59:22 PM: >>>>>>>>>>>>>>> TestCase_4. Current time when add patient <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 02:59:35 PM: Pass: Current time in the website is match to the real current time
+[DEBUG] Wednesday 16-Jun-2021, 02:59:38 PM: >>>>>>>>>>>>>>> End TestCase_4. Current time when add patient <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 02:59:40 PM: >>>>>>>>>>>>>>> TestCase_5. Can save the data when add all patient detail <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 02:59:56 PM: Pass: If not enter all detail the website will not save the data
+[DEBUG] Wednesday 16-Jun-2021, 02:59:58 PM: >>>>>>>>>>>>>>> End TestCase_5. Can save the data when add all patient detail <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:00:01 PM: >>>>>>>>>>>>>>> TestCase_6. Can selected only one consciousness <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:00:13 PM: Pass: Alert is selected only
+[INFO] Wednesday 16-Jun-2021, 03:00:14 PM: Pass: Voice is selected only
+[INFO] Wednesday 16-Jun-2021, 03:00:16 PM: Pass: Pain is selected only
+[INFO] Wednesday 16-Jun-2021, 03:00:17 PM: Pass: Unresponse is selected only
+[DEBUG] Wednesday 16-Jun-2021, 03:00:19 PM: >>>>>>>>>>>>>>> End TestCase_6. Can selected only one consciousness <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:00:22 PM: >>>>>>>>>>>>>>> TestCase_7. Value cannot breakout the limit <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:00:34 PM: Pass: Age (Year) is not breakout the limit
+[INFO] Wednesday 16-Jun-2021, 03:00:35 PM: Pass: Age (Month) is not breakout the limit
+[INFO] Wednesday 16-Jun-2021, 03:00:35 PM: Pass: Temp is not breakout the limit
+[INFO] Wednesday 16-Jun-2021, 03:00:36 PM: Pass: PR is not breakout the limit
+[INFO] Wednesday 16-Jun-2021, 03:00:36 PM: Pass: RR is not breakout the limit
+[INFO] Wednesday 16-Jun-2021, 03:00:36 PM: Pass: BP1 is not breakout the limit
+[INFO] Wednesday 16-Jun-2021, 03:00:36 PM: Pass: BP2 is not breakout the limit
+[INFO] Wednesday 16-Jun-2021, 03:00:36 PM: Pass: O2SAT is not breakout the limit
+[INFO] Wednesday 16-Jun-2021, 03:00:36 PM: Pass: O2Th is not breakout the limit
+[DEBUG] Wednesday 16-Jun-2021, 03:00:38 PM: >>>>>>>>>>>>>>> End TestCase_7. Value cannot breakout the limit <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:00:41 PM: >>>>>>>>>>>>>>> TestCase_8. Value cannot negative <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:00:53 PM: Pass: Age (Year) is positive
+[INFO] Wednesday 16-Jun-2021, 03:00:54 PM: Pass: Age (Month) is positive
+[INFO] Wednesday 16-Jun-2021, 03:00:54 PM: Pass: Temp is positive
+[INFO] Wednesday 16-Jun-2021, 03:00:54 PM: Pass: PR is positive
+[INFO] Wednesday 16-Jun-2021, 03:00:54 PM: Pass: RR is positive
+[INFO] Wednesday 16-Jun-2021, 03:00:54 PM: Pass: BP1 is positive
+[INFO] Wednesday 16-Jun-2021, 03:00:54 PM: Pass: BP2 is positive
+[INFO] Wednesday 16-Jun-2021, 03:00:54 PM: Pass: O2SAT is positive
+[INFO] Wednesday 16-Jun-2021, 03:00:54 PM: Pass: O2Th is positive
+[DEBUG] Wednesday 16-Jun-2021, 03:00:57 PM: >>>>>>>>>>>>>>> End TestCase_8. Value cannot negative <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:00:59 PM: >>>>>>>>>>>>>>> TestCase_9. When edit data the value cannot be negative <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:01:12 PM: Pass: HN is positive
+[INFO] Wednesday 16-Jun-2021, 03:01:12 PM: Pass: Age (Year) is positive
+[INFO] Wednesday 16-Jun-2021, 03:01:13 PM: Pass: Age (Month) is positive
+[INFO] Wednesday 16-Jun-2021, 03:01:13 PM: Pass: Temp is positive
+[INFO] Wednesday 16-Jun-2021, 03:01:13 PM: Pass: PR is positive
+[INFO] Wednesday 16-Jun-2021, 03:01:13 PM: Pass: RR is positive
+[INFO] Wednesday 16-Jun-2021, 03:01:13 PM: Pass: BP1 is positive
+[INFO] Wednesday 16-Jun-2021, 03:01:13 PM: Pass: BP2 is positive
+[INFO] Wednesday 16-Jun-2021, 03:01:13 PM: Pass: O2SAT is positive
+[INFO] Wednesday 16-Jun-2021, 03:01:13 PM: Pass: O2Th is positive
+[DEBUG] Wednesday 16-Jun-2021, 03:01:16 PM: >>>>>>>>>>>>>>> End TestCase_9. When edit data the value cannot be negative <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:01:19 PM: >>>>>>>>>>>>>>> TestCase_10. Show the created time of case <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:01:31 PM: Pass: Time is valid time of this card is: 14:59
+[DEBUG] Wednesday 16-Jun-2021, 03:01:33 PM: >>>>>>>>>>>>>>> End TestCase_10. Show the created time of case <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:01:36 PM: >>>>>>>>>>>>>>> TestCase_11. Show MPEW/NEWS <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:01:47 PM: Pass: MPEW/NEWS is valid and the value is: NEWS = 16
+[DEBUG] Wednesday 16-Jun-2021, 03:01:50 PM: >>>>>>>>>>>>>>> End TestCase_11. Show MPEW/NEWS <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:01:52 PM: >>>>>>>>>>>>>>> TestCase_12. Cannot edit data with alphabet <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:02:04 PM: Pass: HN cannot input alphabet
+[INFO] Wednesday 16-Jun-2021, 03:02:04 PM: Pass: Age (Year) cannot input alphabet
+[INFO] Wednesday 16-Jun-2021, 03:02:05 PM: Pass: Age (Month) cannot input alphabet
+[INFO] Wednesday 16-Jun-2021, 03:02:05 PM: Pass: Temp cannot input alphabet
+[INFO] Wednesday 16-Jun-2021, 03:02:05 PM: Pass: PR cannot input alphabet
+[INFO] Wednesday 16-Jun-2021, 03:02:05 PM: Pass: RR cannot input alphabet
+[INFO] Wednesday 16-Jun-2021, 03:02:05 PM: Pass: BP1 cannot input alphabet
+[INFO] Wednesday 16-Jun-2021, 03:02:05 PM: Pass: BP2 cannot input alphabet
+[INFO] Wednesday 16-Jun-2021, 03:02:05 PM: Pass: O2SAT cannot input alphabet
+[INFO] Wednesday 16-Jun-2021, 03:02:06 PM: Pass: O2Th cannot input alphabet
+[DEBUG] Wednesday 16-Jun-2021, 03:02:08 PM: >>>>>>>>>>>>>>> End TestCase_12. Cannot edit data with alphabet <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:02:11 PM: >>>>>>>>>>>>>>> TestCase_13. Change status waiting for assess to waiting for diagnosis <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:02:24 PM: Pass: Status changed to Waiting for diagnose
+[DEBUG] Wednesday 16-Jun-2021, 03:02:27 PM: >>>>>>>>>>>>>>> End TestCase_13. Change status waiting for assess to waiting for diagnosis <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:02:29 PM: >>>>>>>>>>>>>>> TestCase_14. Data in diagnosis cannot negative <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:02:41 PM: Pass: BP1 is positive
+[INFO] Wednesday 16-Jun-2021, 03:02:41 PM: Pass: BP2 is positive
+[DEBUG] Wednesday 16-Jun-2021, 03:02:43 PM: >>>>>>>>>>>>>>> End TestCase_14. Data in diagnosis cannot negative <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:02:46 PM: >>>>>>>>>>>>>>> TestCase_15. pMap, NEWS, or MPEW cannot edit <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:02:57 PM: Pass: MPEW or NEWS cannot edit
+[INFO] Wednesday 16-Jun-2021, 03:03:00 PM: Pass: pMap cannot edit
+[DEBUG] Wednesday 16-Jun-2021, 03:03:03 PM: >>>>>>>>>>>>>>> End TestCase_15. pMap, NEWS, or MPEW cannot edit <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:03:05 PM: >>>>>>>>>>>>>>> TestCase_16. Diagnose page cannot type alphabet <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:03:17 PM: Pass: Age (Year) cannot enter alphabet
+[INFO] Wednesday 16-Jun-2021, 03:03:19 PM: Pass: Age (Month) cannot enter alphabet
+[INFO] Wednesday 16-Jun-2021, 03:03:19 PM: Pass: BP1 cannot enter alphabet
+[INFO] Wednesday 16-Jun-2021, 03:03:19 PM: Pass: BP2 cannot enter alphabet
+[DEBUG] Wednesday 16-Jun-2021, 03:03:21 PM: >>>>>>>>>>>>>>> End TestCase_16. Diagnose page cannot type alphabet <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:03:24 PM: >>>>>>>>>>>>>>> TestCase_17. Click assess icon it will bring you back to assess page <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:03:36 PM: Pass: When click assess icon it will bring you back to assess page
+[DEBUG] Wednesday 16-Jun-2021, 03:03:38 PM: >>>>>>>>>>>>>>> End TestCase_17. Click assess icon it will bring you back to assess page <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:03:41 PM: >>>>>>>>>>>>>>> TestCase_18. Can choose one choice of infection and not infection <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:03:52 PM: Pass: When click button choice can choose only one
+[INFO] Wednesday 16-Jun-2021, 03:03:54 PM: Pass: When click button choice can choose only one
+[DEBUG] Wednesday 16-Jun-2021, 03:03:57 PM: >>>>>>>>>>>>>>> End TestCase_18. Can choose one choice of infection and not infection <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:03:59 PM: >>>>>>>>>>>>>>> TestCase_19. Edit data, Check status when activate fast protocol, Show time when save in patient treatment that save from diagnose page, and Check status waiting for treatment <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:04:11 PM: ========= Test edit data in diagnosis page =========
+[INFO] Wednesday 16-Jun-2021, 03:04:15 PM: Pass: Edit patient in diagnosis page successfully
+[DEBUG] Wednesday 16-Jun-2021, 03:04:15 PM: ========= Show time when save in patient treatment that save from diagnose page =========
+[INFO] Wednesday 16-Jun-2021, 03:04:15 PM: Pass: Current time in the website is match to the real current time
+[DEBUG] Wednesday 16-Jun-2021, 03:04:16 PM: ========= Status color changed to red when activated fast protocol =========
+[ERROR] Wednesday 16-Jun-2021, 03:04:16 PM: Fail: The status bar color not changed to red
+[DEBUG] Wednesday 16-Jun-2021, 03:04:17 PM: ========= Status changed to 'Waiting for treatment' =========
+[INFO] Wednesday 16-Jun-2021, 03:04:17 PM: Pass: Status changed to Waiting for treatment
+[DEBUG] Wednesday 16-Jun-2021, 03:04:19 PM: >>>>>>>>>>>>>>> End TestCase_19. Edit data, Check status when activate fast protocol, Show time when save in patient treatment that save from diagnose page, and Check status waiting for treatment <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:04:22 PM: >>>>>>>>>>>>>>> TestCase_20. Data in patient treatment cannot be negative <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:04:33 PM: ========= Add SOFA, Lactate,and MAP, Check the data is negative or not, and Check the data cannot be alphabet =========
+[DEBUG] Wednesday 16-Jun-2021, 03:04:34 PM: ========= MAP =========
+[INFO] Wednesday 16-Jun-2021, 03:04:34 PM: Pass: Map input can be number only
+[INFO] Wednesday 16-Jun-2021, 03:04:34 PM: Pass: Map input is positive
+[INFO] Wednesday 16-Jun-2021, 03:04:34 PM: Pass: Add Map successfully
+[DEBUG] Wednesday 16-Jun-2021, 03:04:35 PM: ========= Sofa =========
+[INFO] Wednesday 16-Jun-2021, 03:04:35 PM: Pass: Sofa input can be number only
+[INFO] Wednesday 16-Jun-2021, 03:04:35 PM: Pass: Sofa input is positive
+[INFO] Wednesday 16-Jun-2021, 03:04:35 PM: Pass: Add Sofa successfully
+[DEBUG] Wednesday 16-Jun-2021, 03:04:35 PM: ========= Lactate =========
+[INFO] Wednesday 16-Jun-2021, 03:04:35 PM: Pass: Lactate input can be number only
+[INFO] Wednesday 16-Jun-2021, 03:04:35 PM: Pass: Lactate input is positive
+[INFO] Wednesday 16-Jun-2021, 03:04:36 PM: Pass: Add Lactate successfully
+[DEBUG] Wednesday 16-Jun-2021, 03:04:37 PM: ========= Show MAP, Lactate, and Sofa value =========
+[INFO] Wednesday 16-Jun-2021, 03:04:37 PM: Pass: Map data is - 1. 9 (15:04:34)
+[INFO] Wednesday 16-Jun-2021, 03:04:37 PM: Pass: Sofa data is - 1. 20 (15:04:35)
+[INFO] Wednesday 16-Jun-2021, 03:04:37 PM: Pass: Lactate data is - 1. 20 (15:04:35)
+[DEBUG] Wednesday 16-Jun-2021, 03:04:38 PM: ========= Delete MAP, Lactate, and Sofa =========
+[INFO] Wednesday 16-Jun-2021, 03:04:38 PM: Pass: Map data deleted
+[INFO] Wednesday 16-Jun-2021, 03:04:38 PM: Pass: Sofa data deleted
+[INFO] Wednesday 16-Jun-2021, 03:04:38 PM: Pass: Lactate data deleted
+[DEBUG] Wednesday 16-Jun-2021, 03:04:40 PM: >>>>>>>>>>>>>>> End TestCase_20. Data in patient treatment cannot be negative <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:04:43 PM: >>>>>>>>>>>>>>> TestCase_21. Status changed to Treating <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:04:56 PM: Pass: Status changed to Treating
+[DEBUG] Wednesday 16-Jun-2021, 03:04:58 PM: >>>>>>>>>>>>>>> End TestCase_21. Status changed to Treating <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:05:01 PM: >>>>>>>>>>>>>>> TestCase_22. Can choose only one infection or not infection in treatment page <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:05:15 PM: Pass: When click button choice can choose only one
+[INFO] Wednesday 16-Jun-2021, 03:05:17 PM: Pass: When click button choice can choose only one
+[DEBUG] Wednesday 16-Jun-2021, 03:05:19 PM: >>>>>>>>>>>>>>> End TestCase_22. Can choose only one infection or not infection in treatment page <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:05:22 PM: >>>>>>>>>>>>>>> TestCase_23. Can input note in treatment page <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:05:34 PM: Pass: Can type note
+[DEBUG] Wednesday 16-Jun-2021, 03:05:36 PM: >>>>>>>>>>>>>>> End TestCase_23. Can input note in treatment page <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:05:39 PM: >>>>>>>>>>>>>>> TestCase_24. Click assess icon it will bring you back to assess page and click treat icon it will bring you back to treat page <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:05:50 PM: ========= Click assess icon it will bring you back to assess page =========
+[INFO] Wednesday 16-Jun-2021, 03:05:51 PM: Pass: When click assess icon it will bring you back to assess page
+[DEBUG] Wednesday 16-Jun-2021, 03:05:53 PM: ========= Click treat icon it will bring you back to treat page =========
+[INFO] Wednesday 16-Jun-2021, 03:05:53 PM: Pass: When click treat icon it will bring you back to treat page
+[DEBUG] Wednesday 16-Jun-2021, 03:05:56 PM: >>>>>>>>>>>>>>> End TestCase_24. Click assess icon it will bring you back to assess page and click treat icon it will bring you back to treat page <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:05:58 PM: >>>>>>>>>>>>>>> TestCase_25. Edit patient information in treatment page <<<<<<<<<<<<<<< 
+
+[ERROR] Wednesday 16-Jun-2021, 03:06:11 PM: Case Fail!!!
+[DEBUG] Wednesday 16-Jun-2021, 03:06:14 PM: >>>>>>>>>>>>>>> End TestCase_25. Edit patient information in treatment page <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:06:17 PM: >>>>>>>>>>>>>>> TestCase_26. Can choose only one sepsis, septic shock, or sepsis induced in treatment page <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:06:28 PM: Pass: When click button choice can choose only one
+[INFO] Wednesday 16-Jun-2021, 03:06:30 PM: Pass: When click button choice can choose only one
+[INFO] Wednesday 16-Jun-2021, 03:06:33 PM: Pass: When click button choice can choose only one
+[DEBUG] Wednesday 16-Jun-2021, 03:06:35 PM: >>>>>>>>>>>>>>> End TestCase_26. Can choose only one sepsis, septic shock, or sepsis induced in treatment page <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:06:38 PM: >>>>>>>>>>>>>>> TestCase_27. Mecrit Notified when save <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:06:50 PM: Pass: Mecrit Notified is show now
+[DEBUG] Wednesday 16-Jun-2021, 03:06:53 PM: >>>>>>>>>>>>>>> End TestCase_27. Mecrit Notified when save <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:06:55 PM: >>>>>>>>>>>>>>> TestCase_28. Change time in Admit and Refer <<<<<<<<<<<<<<< 
+
+[ERROR] Wednesday 16-Jun-2021, 03:07:09 PM: Case Fail!!!
+[DEBUG] Wednesday 16-Jun-2021, 03:07:12 PM: >>>>>>>>>>>>>>> End TestCase_28. Change time in Admit and Refer <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:07:14 PM: >>>>>>>>>>>>>>> TestCase_29. Can choose only one Discharge,Against advice,and Death <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:07:26 PM: Pass: Discharge follow up and not follow up can choose only one
+[INFO] Wednesday 16-Jun-2021, 03:07:27 PM: Pass: Against advice follow up and not follow up can choose only one
+[INFO] Wednesday 16-Jun-2021, 03:07:27 PM: Pass: Death chooses only one
+[DEBUG] Wednesday 16-Jun-2021, 03:07:30 PM: >>>>>>>>>>>>>>> End TestCase_29. Can choose only one Discharge,Against advice,and Death <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:07:32 PM: >>>>>>>>>>>>>>> TestCase_30. Can edit patient information in disposition page <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:07:46 PM: Pass: Patient information can edit
+[DEBUG] Wednesday 16-Jun-2021, 03:07:49 PM: >>>>>>>>>>>>>>> End TestCase_30. Can edit patient information in disposition page <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:07:52 PM: >>>>>>>>>>>>>>> TestCase_31. Show all patient information <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: Pass: The information of patient is:
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: Patient name : TestForTestCase19
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: Age : 10M
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: Sex : 0
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: Indoor ER time : 14:59
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: Critical care notification : Yes
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: Activate Sepsis Fast Track Protocol : On
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: Diagnosis : No
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: NEWS : 15
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: BP : 3
+/
+3
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: pMAP : No
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: pSOFA No
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: Lactate : No
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: Antibiotic : No
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: IV Fluid : No
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: AdequateFluid : No
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: Vasopressor : No
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: Hydrocortisone : No
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: Epinephrine : No
+[INFO] Wednesday 16-Jun-2021, 03:08:04 PM: Note : 
+[DEBUG] Wednesday 16-Jun-2021, 03:08:06 PM: >>>>>>>>>>>>>>> End TestCase_31. Show all patient information <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:08:08 PM: >>>>>>>>>>>>>>> TestCase_32. Press cancel button to back to all patient <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:08:23 PM: Pass: Current patient status is "Treating"
+[DEBUG] Wednesday 16-Jun-2021, 03:08:26 PM: >>>>>>>>>>>>>>> End TestCase_32. Press cancel button to back to all patient <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:08:28 PM: >>>>>>>>>>>>>>> TestCase_33. Press save button it will show confirm popup, When click cancel popup it will show the disposition page, and When submit popup status will changed to archive <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:08:32 PM: ========= Press save button it will show confirm popup =========
+[INFO] Wednesday 16-Jun-2021, 03:08:39 PM: Pass: The popup is show
+[DEBUG] Wednesday 16-Jun-2021, 03:08:39 PM: ========= When click cancel popup it will show the disposition page =========
+[INFO] Wednesday 16-Jun-2021, 03:08:43 PM: Pass: The popup not show and back to disposition page
+[DEBUG] Wednesday 16-Jun-2021, 03:08:43 PM: ========= When submit popup status will changed to archive =========
+[INFO] Wednesday 16-Jun-2021, 03:08:46 PM: Pass: The patient status changed to "Archived"
+[DEBUG] Wednesday 16-Jun-2021, 03:08:49 PM: >>>>>>>>>>>>>>> End TestCase_33. Press save button it will show confirm popup, When click cancel popup it will show the disposition page, and When submit popup status will changed to archive <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:08:52 PM: >>>>>>>>>>>>>>> TestCase_34. Show all patient status <<<<<<<<<<<<<<< 
+
+[ERROR] Wednesday 16-Jun-2021, 03:09:03 PM: Fail: Patient status not show all
+[DEBUG] Wednesday 16-Jun-2021, 03:09:05 PM: >>>>>>>>>>>>>>> End TestCase_34. Show all patient status <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:09:08 PM: >>>>>>>>>>>>>>> TestCase_35. When scroll down and up it can press add button to go to add page <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:09:19 PM: Pass: Can go to the add page
+[DEBUG] Wednesday 16-Jun-2021, 03:09:21 PM: >>>>>>>>>>>>>>> End TestCase_35. When scroll down and up it can press add button to go to add page <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:09:24 PM: >>>>>>>>>>>>>>> TestCase_36. Go to disposition page <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:09:36 PM: Pass: Can access to the disposition page
+[DEBUG] Wednesday 16-Jun-2021, 03:09:39 PM: >>>>>>>>>>>>>>> End TestCase_36. Go to disposition page <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:09:42 PM: >>>>>>>>>>>>>>> TestCase_37. Show all patient info in disposition icon <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: Pass: The information of patient is:
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: Patient name : TestForTestCase19
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: Age : 10M
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: Sex : 0
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: Indoor ER time : 14:59
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: Critical care notification : Yes
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: Activate Sepsis Fast Track Protocol : On
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: Diagnosis : Not Infection
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: NEWS : 15
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: BP : 3
+/
+3
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: pMAP : No
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: pSOFA No
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: Lactate : No
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: Antibiotic : No
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: IV Fluid : No
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: AdequateFluid : No
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: Vasopressor : No
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: Hydrocortisone : No
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: Epinephrine : No
+[INFO] Wednesday 16-Jun-2021, 03:09:50 PM: Note : 
+[DEBUG] Wednesday 16-Jun-2021, 03:09:52 PM: >>>>>>>>>>>>>>> End TestCase_37. Show all patient info in disposition icon <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:09:55 PM: >>>>>>>>>>>>>>> TestCase_38. Press status filter to show the chooses status <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:10:16 PM: Pass: Patient show 'Waiting for Assess' status only
+[ERROR] Wednesday 16-Jun-2021, 03:10:23 PM: Fail: Patient show other status or not show
+[INFO] Wednesday 16-Jun-2021, 03:10:36 PM: Pass: Patient show 'Waiting for Treatment' status only
+[INFO] Wednesday 16-Jun-2021, 03:10:49 PM: Pass: Patient show 'Treating' status only
+[INFO] Wednesday 16-Jun-2021, 03:11:02 PM: Pass: Patient show 'Archived' status only
+[DEBUG] Wednesday 16-Jun-2021, 03:11:05 PM: >>>>>>>>>>>>>>> End TestCase_38. Press status filter to show the chooses status <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:11:42 PM: >>>>>>>>>>>>>>> TestCase_28. Change time in Admit and Refer <<<<<<<<<<<<<<< 
+
+[ERROR] Wednesday 16-Jun-2021, 03:11:57 PM: Case Fail!!!
+[DEBUG] Wednesday 16-Jun-2021, 03:12:00 PM: >>>>>>>>>>>>>>> End TestCase_28. Change time in Admit and Refer <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:13:03 PM: >>>>>>>>>>>>>>> TestCase_28. Change time in Admit and Refer <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:13:15 PM: Pass: Time in Admit and Refer can change
+[DEBUG] Wednesday 16-Jun-2021, 03:13:17 PM: >>>>>>>>>>>>>>> End TestCase_28. Change time in Admit and Refer <<<<<<<<<<<<<<< 
+
+[DEBUG] Wednesday 16-Jun-2021, 03:13:37 PM: >>>>>>>>>>>>>>> TestCase_28. Change time in Admit and Refer <<<<<<<<<<<<<<< 
+
+[INFO] Wednesday 16-Jun-2021, 03:13:49 PM: Pass: Time in Admit and Refer can change
+[DEBUG] Wednesday 16-Jun-2021, 03:13:52 PM: >>>>>>>>>>>>>>> End TestCase_28. Change time in Admit and Refer <<<<<<<<<<<<<<< 
+
