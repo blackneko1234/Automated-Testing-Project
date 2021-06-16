@@ -1,3 +1,5 @@
+import Project.AddTravel.AddTestCaseName;
+import Project.AnyaMed.AnyaTestCaseName;
 import Project.MainShortcut;
 import Project.SpeedyErSepsis.SpeedyTestCaseName;
 
@@ -25,6 +27,20 @@ public class MainScreen {
     JFrame Frame;
     JLabel SegmentTitle, BrowserTitle, ProjectTitle;
     JButton Submit;
+
+    public void CreateMainComponent() {
+        BrowserList = new String[]{"Chrome", "Firefox"};
+        ProjectList = new String[]{"--- Please Select project ---", "Add Travel", "Anya Med", "Speedy Er Sepsis"};
+        Browser = new JComboBox<>(BrowserList);
+        Project = new JComboBox<>(ProjectList);
+        BrowserTitle = new JLabel("Browser List");
+        ProjectTitle = new JLabel("Project List");
+        Submit = new JButton("Submit");
+        Frame = new JFrame();
+        TestSegment = new JComboBox<>();
+        ContainTestCase = new CheckBoxGroup("");
+        SegmentTitle = new JLabel("Testcase Segment");
+    }
 
     public void ComponentPersonality() {
         ContainTestCase.setBounds(10, 200, 365, 300);
@@ -60,20 +76,6 @@ public class MainScreen {
         Frame.add(ProjectTitle);
     }
 
-    public void CreateMainComponent() {
-        BrowserList = new String[]{"Chrome", "Firefox"};
-        ProjectList = new String[]{"--- Please Select project ---", "Add Travel", "Anya Med", "Speedy Er Sepsis"};
-        Browser = new JComboBox<>(BrowserList);
-        Project = new JComboBox<>(ProjectList);
-        BrowserTitle = new JLabel("Browser List");
-        ProjectTitle = new JLabel("Project List");
-        Submit = new JButton("Submit");
-        Frame = new JFrame();
-        TestSegment = new JComboBox<>();
-        ContainTestCase = new CheckBoxGroup("");
-        SegmentTitle = new JLabel("Testcase Segment");
-    }
-
     public void SubmitEvent() {
         Submit.addActionListener(e -> {
             String SelectedBrowser = (String) Browser.getSelectedItem();
@@ -102,123 +104,107 @@ public class MainScreen {
 
     public void ProjectEvent() {
         Project.addActionListener(e -> {
-            if (Objects.equals(Project.getSelectedItem(), "--- Please Select project ---")) {
-                Frame.remove(ContainTestCase);
-                Frame.remove(TestSegment);
-                Frame.remove(SegmentTitle);
-                ContainTestCase = new CheckBoxGroup("");
-
-                Frame.add(ContainTestCase);
-                Frame.invalidate();
-                Frame.validate();
-                Frame.repaint();
-            }
-
-            if (Objects.equals(Project.getSelectedItem(), "Anya Med")) {
-                String[] AnyaSegment = {"AllAnya"};
-                Frame.remove(TestSegment);
-                TestSegment = new JComboBox<>(AnyaSegment);
-                TestSegment.setBounds(10, 170, 365, 25);
-                Frame.remove(ContainTestCase);
-                ContainTestCase = new CheckBoxGroup("Anya");
-                ContainTestCase.setBounds(10, 200, 365, 300);
-                RepaintFrame();
-            }
-
-            if (Project.getSelectedItem().equals("Add Travel")) {
-                String[] AddTravelSegment = {"AllAddTravel"};
-                Frame.remove(TestSegment);
-                TestSegment = new JComboBox<>(AddTravelSegment);
-                TestSegment.setBounds(10, 170, 365, 25);
-
-                Frame.remove(ContainTestCase);
-                ContainTestCase = new CheckBoxGroup("Add");
-                ContainTestCase.setBounds(10, 200, 365, 300);
-                RepaintFrame();
-            }
-
-            if (Project.getSelectedItem().equals("Speedy Er Sepsis")) {
-                String[] SpeedySegment = {"All",
-                        "Create or status change",
-                        "Login",
-                        "Homepage",
-                        "Create patient page",
-                        "Assess page",
-                        "Diagnose page",
-                        "Treatment page",
-                        "Disposition page",
-                        "All patient page"};
-                Frame.remove(TestSegment);
-                TestSegment = new JComboBox<>(SpeedySegment);
-                TestSegment.setBounds(10, 170, 365, 25);
-                TestSegment.addActionListener(q -> {
-                    if (Objects.equals(TestSegment.getSelectedItem(), SpeedySegment[0])) {
-                        RemoveSegmentFrame();
-                        ContainTestCase = new CheckBoxGroup(SpeedyTestCaseName.TestCaseList());
-                        ContainTestCase.setBounds(10, 200, 365, 300);
-                        RepaintFrame();
-                    }
-                    if (Objects.equals(TestSegment.getSelectedItem(), SpeedySegment[1])) {
-                        RemoveSegmentFrame();
-                        ContainTestCase = new CheckBoxGroup(SpeedyTestCaseName.TestCaseListCreateOrStatusChangePage());
-                        ContainTestCase.setBounds(10, 200, 365, 300);
-                        RepaintFrame();
-                    }
-                    if (Objects.equals(TestSegment.getSelectedItem(), SpeedySegment[2])) {
-                        RemoveSegmentFrame();
-                        ContainTestCase = new CheckBoxGroup(SpeedyTestCaseName.TestCaseList()[0]);
-                        ContainTestCase.setBounds(10, 200, 365, 300);
-                        RepaintFrame();
-                    }
-                    if (Objects.equals(TestSegment.getSelectedItem(), SpeedySegment[3])) {
-                        RemoveSegmentFrame();
-                        ContainTestCase = new CheckBoxGroup(SpeedyTestCaseName.TestCaseListHome());
-                        ContainTestCase.setBounds(10, 200, 365, 300);
-                        RepaintFrame();
-                    }
-                    if (Objects.equals(TestSegment.getSelectedItem(), SpeedySegment[4])) {
-                        RemoveSegmentFrame();
-                        ContainTestCase = new CheckBoxGroup(SpeedyTestCaseName.TestCaseListCreatePatientPage());
-                        ContainTestCase.setBounds(10, 200, 365, 300);
-                        RepaintFrame();
-                    }
-                    if (Objects.equals(TestSegment.getSelectedItem(), SpeedySegment[5])) {
-                        RemoveSegmentFrame();
-                        ContainTestCase = new CheckBoxGroup(SpeedyTestCaseName.TestCaseListAssessPage());
-                        ContainTestCase.setBounds(10, 200, 365, 300);
-                        RepaintFrame();
-                    }
-                    if (Objects.equals(TestSegment.getSelectedItem(), SpeedySegment[6])) {
-                        RemoveSegmentFrame();
-                        ContainTestCase = new CheckBoxGroup(SpeedyTestCaseName.TestCaseListDiagnosePage());
-                        ContainTestCase.setBounds(10, 200, 365, 300);
-                        RepaintFrame();
-                    }
-                    if (Objects.equals(TestSegment.getSelectedItem(), SpeedySegment[7])) {
-                        RemoveSegmentFrame();
-                        ContainTestCase = new CheckBoxGroup(SpeedyTestCaseName.TestCaseListTreatmentPage());
-                        ContainTestCase.setBounds(10, 200, 365, 300);
-                        RepaintFrame();
-                    }
-                    if (Objects.equals(TestSegment.getSelectedItem(), SpeedySegment[8])) {
-                        RemoveSegmentFrame();
-                        ContainTestCase = new CheckBoxGroup(SpeedyTestCaseName.TestCaseListDispositionPage());
-                        ContainTestCase.setBounds(10, 200, 365, 300);
-                        RepaintFrame();
-                    }
-                    if (Objects.equals(TestSegment.getSelectedItem(), SpeedySegment[9])) {
-                        RemoveSegmentFrame();
-                        ContainTestCase = new CheckBoxGroup(SpeedyTestCaseName.TestCaseListAllPatientPage());
-                        ContainTestCase.setBounds(10, 200, 365, 300);
-                        RepaintFrame();
-                    }
-                });
-                Frame.remove(ContainTestCase);
-                ContainTestCase = new CheckBoxGroup(SpeedyTestCaseName.TestCaseList());
-                ContainTestCase.setBounds(10, 200, 365, 300);
-                RepaintFrame();
+            switch (Objects.requireNonNull(Project.getSelectedItem()).toString()) {
+                case "--- Please Select project ---" -> NonSelectProject();
+                case "Anya Med" -> AnyaMedProjectSection();
+                case "Add Travel" -> AddTravelProjectSection();
+                case "Speedy Er Sepsis" -> SpeedyErSepsisProjectSection();
             }
         });
+    }
+
+    /*========Project========*/
+    public void SpeedyErSepsisProjectSection() {
+        String[] SpeedySegment = {
+                "All",
+                "Create or status change",
+                "Login",
+                "Homepage",
+                "Create patient page",
+                "Assess page",
+                "Diagnose page",
+                "Treatment page",
+                "Disposition page",
+                "All patient page"};
+        Frame.remove(TestSegment);
+        TestSegment = new JComboBox<>(SpeedySegment);
+        TestSegment.setBounds(10, 170, 365, 25);
+        TestSegment.addActionListener(q -> {
+            switch (Objects.requireNonNull(TestSegment.getSelectedItem()).toString()) {
+                case "All" -> SegmentCall(SpeedyTestCaseName.TestCaseList());
+                case "Create or status change" -> SegmentCall(SpeedyTestCaseName.TestCaseListCreateOrStatusChangePage());
+                case "Login" -> SegmentCall(SpeedyTestCaseName.TestCaseList()[0]);
+                case "Homepage" -> SegmentCall(SpeedyTestCaseName.TestCaseListHome());
+                case "Create patient page" -> SegmentCall(SpeedyTestCaseName.TestCaseListCreatePatientPage());
+                case "Assess page" -> SegmentCall(SpeedyTestCaseName.TestCaseListAssessPage());
+                case "Diagnose page" -> SegmentCall(SpeedyTestCaseName.TestCaseListDiagnosePage());
+                case "Treatment page" -> SegmentCall(SpeedyTestCaseName.TestCaseListTreatmentPage());
+                case "Disposition page" -> SegmentCall(SpeedyTestCaseName.TestCaseListDispositionPage());
+                case "All patient page" -> SegmentCall(SpeedyTestCaseName.TestCaseListAllPatientPage());
+            }
+        });
+        CheckBoxGroupCall(SpeedyTestCaseName.TestCaseList());
+    }
+
+    public void AddTravelProjectSection() {
+        String[] AddTravelSegment = {
+                "All"
+                , "AllAddTravel"
+        };
+        Frame.remove(TestSegment);
+        TestSegment = new JComboBox<>(AddTravelSegment);
+        TestSegment.setBounds(10, 170, 365, 25);
+        TestSegment.addActionListener(q -> {
+            switch (Objects.requireNonNull(TestSegment.getSelectedItem()).toString()) {
+                case "All" -> SegmentCall(AddTestCaseName.TestCaseList());
+                case "AllAddTravel" -> SegmentCall(AddTestCaseName.TestCaseList()[0]);
+            }
+        });
+        CheckBoxGroupCall(AddTestCaseName.TestCaseList());
+    }
+
+    public void AnyaMedProjectSection() {
+        String[] AnyaSegment = {
+                "All"
+                , "AllAnya"
+        };
+        Frame.remove(TestSegment);
+        TestSegment = new JComboBox<>(AnyaSegment);
+        TestSegment.setBounds(10, 170, 365, 25);
+        TestSegment.addActionListener(q -> {
+            switch (Objects.requireNonNull(TestSegment.getSelectedItem()).toString()) {
+                case "All" -> SegmentCall(AnyaTestCaseName.TestCaseList());
+                case "AllAnya" -> SegmentCall(AnyaTestCaseName.TestCaseList()[1]);
+            }
+        });
+        CheckBoxGroupCall(AnyaTestCaseName.TestCaseList());
+    }
+
+    /*=============Calling=============*/
+    public void SegmentCall(String... TestCaseList) {
+        RemoveSegmentFrame();
+        ContainTestCase = new CheckBoxGroup(TestCaseList);
+        ContainTestCase.setBounds(10, 200, 365, 300);
+        RepaintFrame();
+    }
+
+    public void CheckBoxGroupCall(String... TestCaseList) {
+        Frame.remove(ContainTestCase);
+        ContainTestCase = new CheckBoxGroup(TestCaseList);
+        ContainTestCase.setBounds(10, 200, 365, 300);
+        RepaintFrame();
+    }
+
+    public void NonSelectProject() {
+        Frame.remove(ContainTestCase);
+        Frame.remove(TestSegment);
+        Frame.remove(SegmentTitle);
+        ContainTestCase = new CheckBoxGroup("");
+
+        Frame.add(ContainTestCase);
+        Frame.invalidate();
+        Frame.validate();
+        Frame.repaint();
     }
 
     public void RepaintFrame() {
@@ -355,5 +341,3 @@ public class MainScreen {
 
     }
 }
-
-
