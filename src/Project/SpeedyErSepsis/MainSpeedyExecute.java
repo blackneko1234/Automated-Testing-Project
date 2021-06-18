@@ -1,7 +1,6 @@
 package Project.SpeedyErSepsis;
 
 import Project.ProjectManager;
-import WebDriver.WebDriverFactory;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -16,6 +15,11 @@ public class MainSpeedyExecute extends ProjectManager {
 
     public MainSpeedyExecute(String browser, String TestCaseName) {
         super(browser, TestCaseName);
+    }
+
+    @Override
+    public String getCaseName(int TestNumber) {
+        return SpeedyTestCaseName.TestCaseList()[TestNumber - 1];
     }
 
     @Override
@@ -34,30 +38,14 @@ public class MainSpeedyExecute extends ProjectManager {
     }
 
     @Override
-    public void CallAndStartWebDriver(String Browser) {
-        driverManager = WebDriverFactory.getBrowser(Browser);
-        driver = driverManager.getDriver();
+    public void CallAndStartWebDriver() {
+        DriverSet();
         driver.get("https://speedy-er-sepsis-webapp-dev-es7lmrr4aq-as.a.run.app/signIn");
     }
 
     @Override
     public void ExitWebDriver(String TestCaseName) {
         SpeedyShortcut.Logout(driver);
-        logger.debug(">>>>>>>>>>>>>>> End TestCase_" + TestCaseName + " <<<<<<<<<<<<<<< \n");
-        driverManager.quitDriver();
-    }
-
-    @Override
-    public String getCaseName(int TestNumber) {
-        return SpeedyTestCaseName.TestCaseList()[TestNumber - 1];
-    }
-
-    @Override
-    public ArrayList<Integer> getIntegerArray(ArrayList<String> stringArray) {
-        ArrayList<Integer> result = new ArrayList<>();
-        for (String stringValue : stringArray) {
-            result.add(Integer.parseInt(stringValue));
-        }
-        return result;
+        ProjectQuit(TestCaseName);
     }
 }

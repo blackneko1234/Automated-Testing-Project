@@ -1,7 +1,6 @@
 package Project.AddTravel;
 
 import Project.ProjectManager;
-import WebDriver.WebDriverFactory;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -39,25 +38,14 @@ public class MainAddExecute extends ProjectManager {
     }
 
     @Override
-    public void CallAndStartWebDriver(String Browser) {
-        driverManager = WebDriverFactory.getBrowser(Browser);
-        driver = driverManager.getDriver();
+    public void CallAndStartWebDriver() {
+        DriverSet();
         driver.get("https://add-travel-webapp-dev-5kgsxuoalq-as.a.run.app/");
     }
 
     @Override
     public void ExitWebDriver(String TestCaseName) {
         //AddShortcut.Logout(driver);
-        logger.debug(">>>>>>>>>>>>>>> End TestCase_" + TestCaseName + " <<<<<<<<<<<<<<< \n");
-        driverManager.quitDriver();
-    }
-
-    @Override
-    public ArrayList<Integer> getIntegerArray(ArrayList<String> stringArray) {
-        ArrayList<Integer> result = new ArrayList<>();
-        for (String stringValue : stringArray) {
-            result.add(Integer.parseInt(stringValue));
-        }
-        return result;
+        ProjectQuit(TestCaseName);
     }
 }
