@@ -15,6 +15,7 @@ public class MainAddExecute extends ProjectManager {
 
     public MainAddExecute(String browser, String TestCaseName) {
         super(browser, TestCaseName);
+        driver.get("https://add-travel-webapp-dev-5kgsxuoalq-as.a.run.app/");
     }
 
     @Override
@@ -35,12 +36,6 @@ public class MainAddExecute extends ProjectManager {
         } catch (Exception ignored) {
 
         }
-    }
-
-    @Override
-    public void CallAndStartWebDriver() {
-        DriverSet();
-        driver.get("https://add-travel-webapp-dev-5kgsxuoalq-as.a.run.app/");
     }
 
     @Override

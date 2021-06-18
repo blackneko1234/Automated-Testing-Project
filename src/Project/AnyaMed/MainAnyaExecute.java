@@ -15,6 +15,7 @@ public class MainAnyaExecute extends ProjectManager {
 
     public MainAnyaExecute(String browser, String TestCaseName) {
         super(browser, TestCaseName);
+        driver.get("https://speedy-er-sepsis-webapp-dev-es7lmrr4aq-as.a.run.app/signIn");
     }
 
     @Override
@@ -35,12 +36,6 @@ public class MainAnyaExecute extends ProjectManager {
         } catch (Exception ignored) {
 
         }
-    }
-
-    @Override
-    public void CallAndStartWebDriver() {
-        DriverSet();
-        driver.get("https://speedy-er-sepsis-webapp-dev-es7lmrr4aq-as.a.run.app/signIn");
     }
 
     @Override
