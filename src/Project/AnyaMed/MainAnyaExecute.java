@@ -2,29 +2,20 @@ package Project.AnyaMed;
 
 import Project.ProjectManager;
 import WebDriver.WebDriverFactory;
-import WebDriver.WebDriverManager;
-import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class MainAnyaExecute extends ProjectManager {
-    public WebDriverManager driverManager;
-    public WebDriver driver;
-    public String Browser;
     public AnyaElement call = new AnyaElement();
-    protected static Logger logger = Logger.getLogger(MainAnyaExecute.class);
 
     public MainAnyaExecute(String browser) {
-        this.Browser = browser;
+        super(browser);
     }
 
     public MainAnyaExecute(String browser, String TestCaseName) {
-        logger.debug(">>>>>>>>>>>>>>> TestCase_" + TestCaseName + " <<<<<<<<<<<<<<< \n");
-        this.Browser = browser;
-        CallAndStartWebDriver(Browser);
+        super(browser, TestCaseName);
     }
 
     @Override

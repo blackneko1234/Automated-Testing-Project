@@ -2,29 +2,20 @@ package Project.SpeedyErSepsis;
 
 import Project.ProjectManager;
 import WebDriver.WebDriverFactory;
-import WebDriver.WebDriverManager;
-import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class MainSpeedyExecute extends ProjectManager {
-    public WebDriverManager driverManager;
-    public WebDriver driver;
-    public String Browser;
     public SpeedyElement call = new SpeedyElement();
-    protected static Logger logger = Logger.getLogger(MainSpeedyExecute.class);
 
     public MainSpeedyExecute(String browser) {
-        this.Browser = browser;
+        super(browser);
     }
 
     public MainSpeedyExecute(String browser, String TestCaseName) {
-        logger.debug(">>>>>>>>>>>>>>> TestCase_" + TestCaseName + " <<<<<<<<<<<<<<< \n");
-        this.Browser = browser;
-        CallAndStartWebDriver(Browser);
+        super(browser, TestCaseName);
     }
 
     @Override
