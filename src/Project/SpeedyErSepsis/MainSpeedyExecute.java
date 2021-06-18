@@ -17,7 +17,6 @@ public class MainSpeedyExecute extends ProjectManager {
     public SpeedyElement call = new SpeedyElement();
     protected static Logger logger = Logger.getLogger(MainSpeedyExecute.class);
 
-
     public MainSpeedyExecute(String browser) {
         this.Browser = browser;
     }
@@ -51,9 +50,9 @@ public class MainSpeedyExecute extends ProjectManager {
     }
 
     @Override
-    public void ExitWebDriver(String TestcaseName) {
+    public void ExitWebDriver(String TestCaseName) {
         SpeedyShortcut.Logout(driver);
-        logger.debug(">>>>>>>>>>>>>>> End TestCase_" + TestcaseName + " <<<<<<<<<<<<<<< \n");
+        logger.debug(">>>>>>>>>>>>>>> End TestCase_" + TestCaseName + " <<<<<<<<<<<<<<< \n");
         driverManager.quitDriver();
     }
 
@@ -64,7 +63,7 @@ public class MainSpeedyExecute extends ProjectManager {
 
     @Override
     public ArrayList<Integer> getIntegerArray(ArrayList<String> stringArray) {
-        ArrayList<Integer> result = new ArrayList<Integer>();
+        ArrayList<Integer> result = new ArrayList<>();
         for (String stringValue : stringArray) {
             result.add(Integer.parseInt(stringValue));
         }

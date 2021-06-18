@@ -41,6 +41,7 @@ public class SpeedyTestCaseName {
                 , "36. Go to disposition page"
                 , "37. Show all patient info in disposition icon"
                 , "38. Press status filter to show the chooses status"
+                , "39. If status is \"Archive\" the status cannot change to other"
         };
     }
 
@@ -124,6 +125,7 @@ public class SpeedyTestCaseName {
                 , "36. Go to disposition page"
                 , "37. Show all patient info in disposition icon"
                 , "38. Press status filter to show the chooses status"
+                , "39. If status is \"Archive\" the status cannot change to other"
         };
     }
 

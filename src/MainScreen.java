@@ -14,7 +14,7 @@ public class MainScreen {
 
         GUI.CreateMainComponent();
         GUI.ComponentPersonality();
-        GUI.FrameComponent();
+        GUI.AddComponentToFrame();
         GUI.SubmitEvent();
         GUI.ProjectEvent();
 
@@ -43,6 +43,16 @@ public class MainScreen {
     }
 
     public void ComponentPersonality() {
+        Frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("resources/Icon.png")));
+        Frame.getContentPane().setBackground(Color.lightGray);
+        Frame.setTitle("Automated testing By DJ (ง 'w')ว");
+        Frame.setSize(400, 600);
+        Frame.setResizable(false);
+        Frame.setLocation(400, 50);
+        Frame.setLayout(null);
+        Frame.setVisible(true);
+        Frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
         ContainTestCase.setBounds(10, 200, 365, 300);
         TestSegment.setBounds(10, 170, 365, 25);
 
@@ -60,15 +70,7 @@ public class MainScreen {
         Submit.setBounds(10, 510, 365, 40);
     }
 
-    public void FrameComponent() {
-        Frame.getContentPane().setBackground(Color.lightGray);
-        Frame.setTitle("Automated testing");
-        Frame.setSize(400, 600);
-        Frame.setResizable(false);
-        Frame.setLocation(400, 50);
-        Frame.setLayout(null);
-        Frame.setVisible(true);
-        Frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    public void AddComponentToFrame() {
         Frame.add(Submit);
         Frame.add(Browser);
         Frame.add(Project);

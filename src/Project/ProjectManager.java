@@ -3,7 +3,7 @@ package Project;
 import java.util.ArrayList;
 
 public abstract class ProjectManager {
-    public abstract String getCaseName(int index);
+    public abstract String getCaseName(int TestNumber);
 
     public abstract void TestRun(ArrayList<String> NumSet);
 

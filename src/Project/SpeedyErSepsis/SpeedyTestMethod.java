@@ -158,4 +158,8 @@ public class SpeedyTestMethod extends MainSpeedyExecute {
     public void Test38() {
         new Test38(Browser, getCaseName(38));
     }
+
+    public void Test39() {
+        new Test39(Browser, getCaseName(39));
+    }
 }

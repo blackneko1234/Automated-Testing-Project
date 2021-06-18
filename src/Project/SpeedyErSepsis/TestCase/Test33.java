@@ -30,9 +30,9 @@ public class Test33 extends MainSpeedyExecute {
             }
 
             logger.debug("========= When submit popup status will changed to archive =========");
-            call.getAdmitTimeDisposition(driver).click();
-            MainShortcut.DeleteText(call.getAdmitTimeChangeDisposition(driver));
-            call.getAdmitTimeChangeDisposition(driver).sendKeys("1111");
+            call.getReferDisposition(driver).click();
+            MainShortcut.DeleteText(call.getReferChangeDisposition(driver));
+            call.getReferChangeDisposition(driver).sendKeys("1111");
 
             call.getSaveDisposition(driver).click();
             if (call.getDispositionSubmitPopup(driver).isDisplayed()) {
