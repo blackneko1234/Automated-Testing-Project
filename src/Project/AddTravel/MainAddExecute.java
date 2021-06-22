@@ -20,7 +20,7 @@ public class MainAddExecute extends ProjectManager {
 
     @Override
     public String getCaseName(int TestNumber) {
-        return AddTestCaseName.TestCaseList()[TestNumber - 1];
+        return AddTestCaseName.TestCaseList[TestNumber - 1];
     }
 
     @Override
@@ -29,7 +29,7 @@ public class MainAddExecute extends ProjectManager {
             for (int i = 1; i <= Collections.max(getIntegerArray(NumSet)); i++) {
                 if (NumSet.contains(String.valueOf(i))) {
                     Method InstanceMethod = AddTestMethod.class.getMethod("Test" + i);
-                    AddTestMethod CallMethod = new AddTestMethod(Browser);
+                    var CallMethod = new AddTestMethod(Browser);
                     InstanceMethod.invoke(CallMethod);
                 }
             }

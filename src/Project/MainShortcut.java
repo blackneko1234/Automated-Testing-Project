@@ -32,8 +32,8 @@ public class MainShortcut {
                 Runtime.getRuntime().exec("taskkill /F /IM ChromeDriver.exe /T");
                 Runtime.getRuntime().exec("taskkill /F /IM geckodriver.exe /T");
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (Exception ignored) {
+
         }
     }
 

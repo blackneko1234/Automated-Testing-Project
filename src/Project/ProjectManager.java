@@ -24,12 +24,6 @@ public abstract class ProjectManager {
         DriverSet();
     }
 
-    public abstract String getCaseName(int TestNumber);
-
-    public abstract void TestRun(ArrayList<String> NumSet);
-
-    public abstract void ExitWebDriver(String TestCaseName);
-
     public ArrayList<Integer> getIntegerArray(ArrayList<String> stringArray) {
         ArrayList<Integer> result = new ArrayList<>();
         for (String stringValue : stringArray) {
@@ -47,4 +41,11 @@ public abstract class ProjectManager {
         driverManager = WebDriverFactory.getBrowser(Browser);
         driver = driverManager.getDriver();
     }
+
+    public abstract String getCaseName(int TestNumber);
+
+    public abstract void TestRun(ArrayList<String> NumSet);
+
+    public abstract void ExitWebDriver(String TestCaseName);
+
 }

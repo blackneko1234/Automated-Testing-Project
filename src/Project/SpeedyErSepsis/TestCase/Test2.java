@@ -5,7 +5,6 @@ import Project.SpeedyErSepsis.MainSpeedyExecute;
 import org.openqa.selenium.By;
 
 public class Test2 extends MainSpeedyExecute {
-
     public Test2(String browser, String TestCaseName) {
         super(browser, TestCaseName);
         try {

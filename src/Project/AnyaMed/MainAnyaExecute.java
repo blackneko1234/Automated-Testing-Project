@@ -20,7 +20,7 @@ public class MainAnyaExecute extends ProjectManager {
 
     @Override
     public String getCaseName(int TestNumber) {
-        return AnyaTestCaseName.TestCaseList()[TestNumber - 1];
+        return AnyaTestCaseName.TestCaseList[TestNumber - 1];
     }
 
     @Override
@@ -29,7 +29,7 @@ public class MainAnyaExecute extends ProjectManager {
             for (int i = 1; i <= Collections.max(getIntegerArray(NumSet)); i++) {
                 if (NumSet.contains(String.valueOf(i))) {
                     Method InstanceMethod = AnyaTestMethod.class.getMethod("Test" + i);
-                    AnyaTestMethod CallMethod = new AnyaTestMethod(Browser);
+                    var CallMethod = new AnyaTestMethod(Browser);
                     InstanceMethod.invoke(CallMethod);
                 }
             }

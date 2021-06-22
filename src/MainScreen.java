@@ -83,23 +83,17 @@ public class MainScreen {
             String SelectedBrowser = (String) Browser.getSelectedItem();
             String SelectedProject = (String) Project.getSelectedItem();
 
-            if (SelectedBrowser != null && SelectedProject != null) {
-                try {
-                    if (Objects.equals(Project.getSelectedItem(), "--- Please Select project ---")) {
-                        JOptionPane.showMessageDialog(Frame
-                                , "Please select project!!!!"
-                                , "Alert"
-                                , JOptionPane.ERROR_MESSAGE);
-                    } else {
-                        JOptionPane.showMessageDialog(Frame
-                                , SelectedBrowser + ", " + SelectedProject + ", " + ContainTestCase.KeepIndex
-                                , "Alert"
-                                , JOptionPane.PLAIN_MESSAGE);
-                        new ProjectAndBrowserConnector(SelectedBrowser, SelectedProject, ContainTestCase.KeepIndex);
-                    }
-                } catch (Exception er) {
-                    er.printStackTrace();
-                }
+            if (Objects.equals(Project.getSelectedItem(), "--- Please Select project ---")) {
+                JOptionPane.showMessageDialog(Frame
+                        , "Please select project!!!!"
+                        , "Alert"
+                        , JOptionPane.ERROR_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(Frame
+                        , SelectedBrowser + ", " + SelectedProject + ", " + ContainTestCase.KeepIndex
+                        , "Alert"
+                        , JOptionPane.PLAIN_MESSAGE);
+                new ProjectAndBrowserConnector(SelectedBrowser, SelectedProject, ContainTestCase.KeepIndex);
             }
         });
     }
@@ -133,19 +127,19 @@ public class MainScreen {
         TestSegment.setBounds(10, 170, 365, 25);
         TestSegment.addActionListener(q -> {
             switch (Objects.requireNonNull(TestSegment.getSelectedItem()).toString()) {
-                case "All" -> SegmentCall(SpeedyTestCaseName.TestCaseList());
-                case "Create or status change" -> SegmentCall(SpeedyTestCaseName.TestCaseListCreateOrStatusChangePage());
-                case "Login" -> SegmentCall(SpeedyTestCaseName.TestCaseList()[0]);
-                case "Homepage" -> SegmentCall(SpeedyTestCaseName.TestCaseListHome());
-                case "Create patient page" -> SegmentCall(SpeedyTestCaseName.TestCaseListCreatePatientPage());
-                case "Assess page" -> SegmentCall(SpeedyTestCaseName.TestCaseListAssessPage());
-                case "Diagnose page" -> SegmentCall(SpeedyTestCaseName.TestCaseListDiagnosePage());
-                case "Treatment page" -> SegmentCall(SpeedyTestCaseName.TestCaseListTreatmentPage());
-                case "Disposition page" -> SegmentCall(SpeedyTestCaseName.TestCaseListDispositionPage());
-                case "All patient page" -> SegmentCall(SpeedyTestCaseName.TestCaseListAllPatientPage());
+                case "All" -> SegmentCall(SpeedyTestCaseName.TestCaseList);
+                case "Create or status change" -> SegmentCall(SpeedyTestCaseName.TestCaseListCreateOrStatusChangePage);
+                case "Login" -> SegmentCall(SpeedyTestCaseName.TestCaseList[0]);
+                case "Homepage" -> SegmentCall(SpeedyTestCaseName.TestCaseListHome);
+                case "Create patient page" -> SegmentCall(SpeedyTestCaseName.TestCaseListCreatePatientPage);
+                case "Assess page" -> SegmentCall(SpeedyTestCaseName.TestCaseListAssessPage);
+                case "Diagnose page" -> SegmentCall(SpeedyTestCaseName.TestCaseListDiagnosePage);
+                case "Treatment page" -> SegmentCall(SpeedyTestCaseName.TestCaseListTreatmentPage);
+                case "Disposition page" -> SegmentCall(SpeedyTestCaseName.TestCaseListDispositionPage);
+                case "All patient page" -> SegmentCall(SpeedyTestCaseName.TestCaseListAllPatientPage);
             }
         });
-        CheckBoxGroupCall(SpeedyTestCaseName.TestCaseList());
+        CheckBoxGroupCall(SpeedyTestCaseName.TestCaseList);
     }
 
     public void AddTravelProjectSection() {
@@ -158,11 +152,11 @@ public class MainScreen {
         TestSegment.setBounds(10, 170, 365, 25);
         TestSegment.addActionListener(q -> {
             switch (Objects.requireNonNull(TestSegment.getSelectedItem()).toString()) {
-                case "All" -> SegmentCall(AddTestCaseName.TestCaseList());
-                case "AllAddTravel" -> SegmentCall(AddTestCaseName.TestCaseList()[0]);
+                case "All" -> SegmentCall(AddTestCaseName.TestCaseList);
+                case "AllAddTravel" -> SegmentCall(AddTestCaseName.TestCaseList[0]);
             }
         });
-        CheckBoxGroupCall(AddTestCaseName.TestCaseList());
+        CheckBoxGroupCall(AddTestCaseName.TestCaseList);
     }
 
     public void AnyaMedProjectSection() {
@@ -175,11 +169,11 @@ public class MainScreen {
         TestSegment.setBounds(10, 170, 365, 25);
         TestSegment.addActionListener(q -> {
             switch (Objects.requireNonNull(TestSegment.getSelectedItem()).toString()) {
-                case "All" -> SegmentCall(AnyaTestCaseName.TestCaseList());
-                case "AllAnya" -> SegmentCall(AnyaTestCaseName.TestCaseList()[1]);
+                case "All" -> SegmentCall(AnyaTestCaseName.TestCaseList);
+                case "AllAnya" -> SegmentCall(AnyaTestCaseName.TestCaseList[1]);
             }
         });
-        CheckBoxGroupCall(AnyaTestCaseName.TestCaseList());
+        CheckBoxGroupCall(AnyaTestCaseName.TestCaseList);
     }
 
     /*=============Calling=============*/
@@ -237,6 +231,7 @@ public class MainScreen {
                 for (JCheckBox cb : checkBoxes) {
                     cb.setSelected(all.isSelected());
                     String SplitText = cb.getText().split("\\.")[0];
+
                     if (all.isSelected()) {
                         all.setText("Deselect All");
                         System.out.println(SplitText);

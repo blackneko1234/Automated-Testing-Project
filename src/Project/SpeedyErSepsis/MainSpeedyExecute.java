@@ -20,7 +20,7 @@ public class MainSpeedyExecute extends ProjectManager {
 
     @Override
     public String getCaseName(int TestNumber) {
-        return SpeedyTestCaseName.TestCaseList()[TestNumber - 1];
+        return SpeedyTestCaseName.TestCaseList[TestNumber - 1];
     }
 
     @Override
@@ -29,7 +29,7 @@ public class MainSpeedyExecute extends ProjectManager {
             for (int i = 1; i <= Collections.max(getIntegerArray(NumSet)); i++) {
                 if (NumSet.contains(String.valueOf(i))) {
                     Method InstanceMethod = SpeedyTestMethod.class.getMethod("Test" + i);
-                    SpeedyTestMethod CallMethod = new SpeedyTestMethod(Browser);
+                    var CallMethod = new SpeedyTestMethod(Browser);
                     InstanceMethod.invoke(CallMethod);
                 }
             }
